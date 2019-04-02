@@ -1,0 +1,444 @@
+<html>
+<body>
+        <style type="text/css">@page {
+            size: auto;
+            odd-header-name: header;
+            odd-footer-name: footer;
+        }
+    
+        div.page {
+            font-family: frudiger;
+            page-break-before: always;
+    
+        }
+        div.noheader {
+            page-break-before: always;
+    
+        }
+        .right {
+            text-align: right;
+        }
+        .left {
+            text-align: left;
+        }
+        .center {
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    
+        .bordered {
+            border: 1px solid black;
+        }
+    
+        .bordered-0 {
+            border: unset;
+        }
+    
+        .table-bordered tbody td {
+            border: 1px solid black;
+        }
+        .data-name {
+            padding: 5px;
+            font-style: italic;
+            font-weight: lighter;
+        }
+    
+        
+        .data-value {
+            word-wrap: normal;
+            padding: 4px;
+            font-weight: bold;
+        }
+        .data-value:hover {
+            background-color: aqua;
+        }
+    </style>
+    <htmlpageheader header-style="font-weight: bold; color: #000000;" line="on" name="header">
+    <p style="border-bottom:1px solid black"><img src="./logo.JPG" width="200" /></p>
+    </htmlpageheader> <htmlpagefooter name="footer">
+    <p style="border-bottom:1px solid black"></p>
+    
+    <table style="width:100%">
+        <tbody>
+            <tr>
+                <td class="left" style="color:rgb(104, 104, 104); font-size: smaller;">FAO-FRM-001</td>
+                <td class="right" style="color:rgb(104, 104, 104); font-size: smaller;">Rev.No. 4/10.10.2017.</td>
+            </tr>
+            <tr>
+                <td class="right" colspan="2" style="color:rgb(104, 104, 104); font-size: smaller;">Page: {PAGENO} of {nbpg}</td>
+            </tr>
+        </tbody>
+    </table>
+    </htmlpagefooter>
+    
+    <div>
+    <p class="center"><b>NON-SCHEDULE SERVICES APPLICATION FORM</b></p>
+    
+    <table class="table-border">
+        <tbody>
+            <tr>
+                <td class="center bordered" style="width:100%;">
+                <p><b>Only completed application form with submitted documents will be processed.</b></p>
+                &nbsp;
+    
+                <p><b>The form shall be submitted together with appendices to:</b></p>
+    
+                <p>Croatian Civil Aviation Agency</p>
+    
+                <p>Ulica grada Vukovara 284_10 000 Zagreb_Tel.: +385 1 2369 350_Fax.: +385 1 2369 351</p>
+    
+                <p>e-mail: <a href="mailto:flight-authorization@ccaa.hr">flight-authorization@ccaa.hr</a></p>
+                &nbsp;
+    
+                <p></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    &nbsp;
+    
+    <table class="table-border">
+        <tbody>
+            <tr>
+                <td class="bordered" height="60" width="35%"><span class="data-name"><img src="./plane.png" width="12"> Name of The Air Carrier</span></td>
+                <td class="bordered data-value" colspan="2">{Operator_Name}</td>
+            </tr>
+            <tr>
+                <td class="bordered" height="50" width="35%"><span class="data-name"><img src="./plane.png" width="12"> Address</span></td>
+                <td class="bordered data-value" colspan="2">{Operator_Address}</td>
+            </tr>
+            <tr>
+                <td class="bordered" colspan="2" height="50">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="data-name"><img src="./plane.png" width="12"> ICAO Three letter code</td>
+                            <td class="data-value" height="50" width="60%">FILL IN</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+                <td class="bordered" width="50%">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="data-name"><img src="./plane.png" width="12"> Phone No.</td>
+                            <td class="data-value" height="50" width="70%">+420 2333 43362</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="bordered" colspan="2" height="50">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="data-name"><img src="./plane.png" width="12"> Telefax No.</td>
+                            <td class="data-value" height="50" width="70%">+420 2333 43102</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+                <td class="bordered" width="50%">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="data-name"><img src="./plane.png" width="12"> E-mail:</td>
+                            <td class="data-value" height="50" width="70%">ops@eurojet-service.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="bordered" style="vertical-align:middle;"><span class="data-name"><img src="./plane.png" width="12"> Aircraft Information:</span></td>
+                <td class="bordered" colspan="2">
+                <table class="no-border">
+                    <tbody>
+                        <tr>
+                            <td width="20%">Aircraft Type:</td>
+                            <td class="data-value" height="50" width="80%">{Aircraft_Type}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Registration mark/s:</td>
+                        </tr>
+                        <tr>
+                            <td class="data-value" colspan="2" height="200" valign="top">{Aircraft_Registry}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Passenger seats:</td>
+                        </tr>
+                        <tr>
+                            <td class="data-value" colspan="2" height="50">FILL IN</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="bordered" height="70" style="vertical-align:middle;"><span class="data-name"><img src="./plane.png" width="12"> Type of operations</span></td>
+                <td class="bordered" colspan="2">
+                <p><input id="" name="" type="checkbox" /> Passengers</p>
+                &nbsp;
+    
+                <p><input id="" name="" type="checkbox" /> Cargo</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="page">
+    <table>
+        <tbody>
+            <tr>
+                <td class="bordered data-name"><img src="./plane.png" width="12"> Category of the flights</td>
+                <td class="bordered" width="60%">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td height="40"><input id="" name="" type="checkbox" /> Own Use Flight</td>
+                            <td height="40"><input id="" name="" type="checkbox" /> Cargo Flight</td>
+                        </tr>
+                        <tr>
+                            <td height="40"><input id="" name="" type="checkbox" /> Inclusive Tour charter flight</td>
+                            <td><input id="" name="" type="checkbox" /> Taxi flight</td>
+                        </tr>
+                        <tr>
+                            <td height="40"><input id="" name="" type="checkbox" /> Special Event Charter flight</td>
+                            <td><input id="" name="" type="checkbox" /> Other</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <p><b><img src="./plane.png" width="12"> FREEDOMS OF THE AIR</b></p>
+    &nbsp;
+    
+    <table class="bordered">
+        <tbody>
+            <tr>
+                <td>3rd/4th <input type="checkbox" /></td>
+                <td>4th <input id="" name="" type="checkbox" /></td>
+                <td>5th <input id="" name="" type="checkbox" /></td>
+                <td>7th <input id="" name="" type="checkbox" /></td>
+                <td class="right">Other (Please specify*) <input id="" name="" type="checkbox" /></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <p style="border-bottom: 1px solid black;">*</p>
+    
+    <p><b><img src="./plane.png" width="12"> FLIGHT DETAILS</b></p>
+    
+    <p><b>Please attach a supplementary sheet if necessary</b></p>
+    &nbsp;
+    
+    <table class="table-bordered">
+        <tbody>
+            <tr>
+                <td class="center" height="40">Date/Period</td>
+                <td class="center">Flight number/s</td>
+                <td class="center" style="word-wrap:break-word;">Airport Departure &ndash;<br />
+                Airport Arrival</td>
+                <td class="center">ETD (UTC)</td>
+                <td class="center">ETA (UTC)</td>
+                <td class="center">No. pax<br />
+                //Quantity./Vol.cargo</td>
+            </tr>
+            <tr>
+                <td class="center data-value" height="30" width="30">{ATA_Date_DDMMM}</td>
+                <td class="center data-value" height="30" width="30">{Arrival_CallSign}</td>
+                <td class="center data-value" height="30" width="30">{AirportFrom_ICAO} -&nbsp;{Airport_ICAO}</td>
+                <td class="center data-value" height="30" width="30">{ATDF_T_HHMMZ}</td>
+                <td class="center data-value" height="30" width="30">{ATA_T_HHMMZ}</td>
+                <td class="center data-value" height="30" width="30">{ETA_Pax}</td>
+            </tr>
+            <tr>
+                <td class="center data-value" height="30" width="30">{ATD_Date_DDMMM}</td>
+                <td class="center data-value" height="30" width="30">{Departure_CallSign}</td>
+                <td class="center data-value" height="30" width="30">{Airport_ICAO} -&nbsp;{AirportTo_ICAO}</td>
+                <td class="center data-value" height="30" width="30">{ATD_T_HHMMZ}</td>
+                <td class="center data-value" height="30" width="30">{ATAT_T_HHMMZ}</td>
+                <td class="center data-value" height="30" width="30">{ETD_Pax}</td>
+            </tr>
+            <tr>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+            </tr>
+            <tr>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+            </tr>
+            <tr>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+            </tr>
+            <tr>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+            </tr>
+            <tr>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+            </tr>
+            <tr>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+            </tr>
+            <tr>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+            </tr>
+            <tr>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+            </tr>
+            <tr>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+                <td class="center data-value" height="30" width="30"></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="page">
+    <p><b><img src="./plane.png" width="12"> CHARTERER (TOUR OPERATOR/TRAVEL ORGANIZER)</b></p>
+    &nbsp;
+    
+    <table class="table-bordered">
+        <tbody>
+            <tr>
+                <td class="data-name" height="60" width="25%"><img src="./plane.png" width="12"> Name and address of the Charterer (Tour Operator/Travel Organizer)</td>
+                <td class="data-value">FILL IN</td>
+            </tr>
+            <tr>
+                <td class="data-name" rowspan="2"><img src="./plane.png" width="12"> Phone, Fax No, e-mail</td>
+                <td class="data-value" height="30">FILL IN</td>
+            </tr>
+            <tr>
+                <td class="data-value" height="30">FILL IN</td>
+            </tr>
+        </tbody>
+    </table>
+    &nbsp;
+    
+    <p><b><img src="./plane.png" width="12"> REMARKS</b></p>
+    
+    <table>
+        <tbody>
+            <tr>
+                <td class="data-value bordered" height="70"></td>
+            </tr>
+        </tbody>
+    </table>
+    &nbsp;
+    
+    <p><b><img src="./plane.png" width="12"> APPLICANT</b></p>
+    
+    <table>
+        <tbody>
+            <tr>
+                <td class="bordered">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="data-name"><img src="./plane.png" width="12"> Name of the organisation</td>
+                        </tr>
+                        <tr>
+                            <td class="data-value" height="40">Euro Jet Intercontinental Limited</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+                <td class="bordered">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="data-name"><img src="./plane.png" width="12"> Name and title</td>
+                        </tr>
+                        <tr>
+                            <td class="data-value" height="40">{User_Name}, Flight Operations Coordinator</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="bordered">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="data-name"><img src="./plane.png" width="12"> Place and date</td>
+                        </tr>
+                        <tr>
+                            <td class="data-value" height="40">Prague,&nbsp;{xx_TimeStamp}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+                <td class="bordered">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="data-name"><img src="./plane.png" width="12"> Signature</td>
+                        </tr>
+                        <tr>
+                            <td class="data-value" height="40"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    &nbsp;
+    
+    <p><b>We hereby declare that all details given above and in the annexes attached to this form are true and correct.</b></p>
+    </div>    
+</body>
+</html>
